@@ -1,6 +1,7 @@
 import React from 'react'
-import {AppBar, Toolbar, IconButton, Badge, MenuItem, Menu, Typography} from "@material-ui/core"
-import {ShoppingCart} from "@material-ui/icons"
+import {AppBar, Toolbar, IconButton, Badge, MenuItem, Menu, Typography, Icon} from "@material-ui/core"
+import {ShoppingCart, } from "@material-ui/icons"
+import PermIdentityOutlinedIcon from '@material-ui/icons/PermIdentityOutlined';
 import {Link, useLocation} from "react-router-dom"
 import logo from "../../../../assets/commerce.png"
 import useStyles from "./styles"
@@ -19,8 +20,16 @@ const Navbar = ({itemsInCard}) => {
                         <img src={logo} alt="commerce logo" height="25px" className={classes.image}/>
                         example text
                     </Typography>
-                    <div className={classes.grow} />
+                    
+                    <div className={classes.grow} >
+                        <Typography>
+                            baba
+                        </Typography>
+                        </div>
                     <div>
+                        <IconButton color="inherit" >
+                        < PermIdentityOutlinedIcon />
+                        </IconButton>
                     {  location.pathname === "/" && (<IconButton color="inherit" component={Link} to="/cart">
                             <Badge badgeContent={itemsInCard} color="secondary">
                                 <ShoppingCart />
