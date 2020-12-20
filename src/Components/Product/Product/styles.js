@@ -3,12 +3,12 @@ import { makeStyles } from '@material-ui/core/styles';
 export default makeStyles(() => ({
     root: {
         maxWidth: '100%',
-        height: "100%"
+        height: "100%",
     },
     media: {
         backgroundSize: "200px",
-        height: "35px",
-        paddingTop: '56.25%', // 16:9
+        height: "100px",
+        paddingTop: '56.25%', // 16:9,
     },
     cardActions: {
         display: 'flex',

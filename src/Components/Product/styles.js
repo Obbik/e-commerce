@@ -8,11 +8,33 @@ export default makeStyles((theme) => ({
         flexGrow: 1,
         paddingTop: theme.spacing(2)
     },
+    middleSelect:{
+        
+        justifyContent:"center",
+        display: "flex",
+        align:"center",
+        marginTop:"20px",
+        marginBottom:"20px"
+        
+    },  
+    MiddleTestHeader:{
+        color:"#E3BE87",
+    },
+    middleText:{
+        marginLeft:"10px",
+        fontSize:"20px",
+        variant:"h1",
+        '&:hover':{
+            fontWeight:"600",
+            cursor:"pointer"
+        }
+    },
     root: {
         flexGrow: 1,
     },
     container: {
-        width: "700px"
+        width: "1200px",
+      
     },
    
 }));
