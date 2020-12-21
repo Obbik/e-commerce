@@ -7,14 +7,10 @@ import useStyles from './styles'
 const Product = ({product, onAddToCard}) => {
     const classes = useStyles()
 
-
-
-   
     return (
         <Card className={classes.root}>
-         
            <CardMedia  className={classes.media} image={product.media.source} title={product.name}/>
-            {/* <CardContent>
+            <CardContent>
                 <div className={classes.CardContent}>
                     <Typography  variant="h5" gutterBottom className={classes.cardTitle}>
                         {product.name}
@@ -24,12 +20,12 @@ const Product = ({product, onAddToCard}) => {
                     </Typography>
                 </div>
                 <Typography dangerouslySetInnerHTML={{__html:product.description}} variant="body2" color="textSecondary" />
-            </CardContent> */}
-            {/* <CardActions disableSpacing className={classes.CardActions}>
+            </CardContent> 
+             <CardActions disableSpacing className={classes.CardActions}>
                  <IconButton  aria-label="add to card"  onClick={()=>onAddToCard(product.id,1)}>
                      <AddShoppingCart />
                  </IconButton>
-             </CardActions> */}
+             </CardActions>
        </Card>
     )
 }

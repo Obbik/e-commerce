@@ -54,9 +54,6 @@ const App = () => {
                     <Route exact path="/cart">
                         <Cart cartItems={cart} onfetchCart={setQuantity} deleteItem={deleteItem} />
                     </Route>
-                    {/* <Route exact path="/"> */}
-
-                    {/* </Route> */}
                 </Switch>
             </div>
         </Router >

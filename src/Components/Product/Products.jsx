@@ -1,19 +1,19 @@
 import React from 'react'
-import {Grid, Container, Typography} from '@material-ui/core'
+import {Grid, Container, Typography, Button , ButtonGroup, TextField} from '@material-ui/core'
 import Product from "./Product/Product"
-// import Bottom from "./P  roduct/Bottom"
 import useStyles from "./styles"
 
-
-
 const Products = ({products,onAddToCard}) =>{
+
+    
     const classes = useStyles()
     const searchProduct = ["All","Shampoo","Hair Shampoo","Oil"]
     return(
     <main className={classes.content} >
         <div className={classes.toolbar}/>
-            <Typography align="center" variant="h2">
-                <span className={classes.MiddleTestHeader}>Best Collection </span> From Your Store <br/>
+           {/* <Container maxWidth="m" className={classes.headerContainer}> */}
+            <Typography align="center" variant="h3" > 
+                <span className={classes.MiddleTestHeader}>Best Collection </span> From Your Store <br />
                 That You Dont Want To Miss
             </Typography>
             <div align="center" className={classes.middleSelect}>
@@ -23,16 +23,18 @@ const Products = ({products,onAddToCard}) =>{
                 </Typography >
             ))}
             </div>
+           {/* </Container> */}
         <Container className={classes.container}>
             <Grid container justify="center" spacing={4} className={classes.grid}>
                 {products.map((product)=>(
-                <Grid item key={product.id}  xs={4}>    
+                <Grid item key={product.id}  xs={12} md={4}>    
                     <Product product={product} onAddToCard={onAddToCard}/>
                 </Grid>
                 ))}
             </Grid>
         </Container>
-        <Typography align="center" className={classes.goToShop} >
+       
+        <Typography align="center" className={classes.goToShop} variant="body2" gutterBottom="true">
             Go to shop
         </Typography>
     </main>

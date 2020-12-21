@@ -23,7 +23,7 @@ const Navbar = ({itemsInCard}) => {
                     
                     <div className={classes.grow} >
                         <Typography>
-                            baba
+                            
                         </Typography>
                         </div>
                     <div>

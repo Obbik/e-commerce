@@ -4,18 +4,17 @@ export default makeStyles((theme) => ({
     toolbar: theme.mixins.toolbar,
 
     content: {
+      
         backgroundColor: "#f3f3f3",
         flexGrow: 1,
         paddingTop: theme.spacing(2)
     },
     middleSelect: {
-
         justifyContent: "center",
         display: "flex",
         align: "center",
         marginTop: "20px",
         marginBottom: "20px"
-
     },
     MiddleTestHeader: {
         color: "#E3BE87",
@@ -29,17 +28,21 @@ export default makeStyles((theme) => ({
             cursor: "pointer"
         }
     },
+
     root: {
         flexGrow: 1,
     },
     container: {
-        width: "1200px",
+        maxwidth: "1200px",
 
     },
     goToShop: {
+        fontFamily:"'Lato', sans-serif;",
+        fontSize:"17px",
         marginTop: "2rem",
         textDecoration: "underline",
-        cursor: "pointer"
+        cursor: "pointer",
+        marginBottom:"0",
     }
 
 
