@@ -18,6 +18,8 @@ export default makeStyles((theme) => ({
     },
     MiddleTestHeader: {
         color: "#E3BE87",
+        fontSize:"72px",
+        lineHeight:"2"
     },
     middleText: {
         marginLeft: "10px",

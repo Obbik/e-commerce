@@ -13,7 +13,7 @@ const Products = ({products,onAddToCard}) =>{
         <div className={classes.toolbar}/>
            {/* <Container maxWidth="m" className={classes.headerContainer}> */}
             <Typography align="center" variant="h3" > 
-                <span className={classes.MiddleTestHeader}>Best Collection </span> From Your Store <br />
+                <span className={classes.MiddleTestHeader}>Best Collection <br /> </span> From Your Store 
                 That You Dont Want To Miss
             </Typography>
             <div align="center" className={classes.middleSelect}>
