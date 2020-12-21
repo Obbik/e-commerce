@@ -1,7 +1,7 @@
 import React from 'react'
 import {Grid, Container, Typography} from '@material-ui/core'
 import Product from "./Product/Product"
-
+// import Bottom from "./P  roduct/Bottom"
 import useStyles from "./styles"
 
 
@@ -32,9 +32,9 @@ const Products = ({products,onAddToCard}) =>{
                 ))}
             </Grid>
         </Container>
-
-
-
+        <Typography align="center" className={classes.goToShop} >
+            Go to shop
+        </Typography>
     </main>
     )
 }

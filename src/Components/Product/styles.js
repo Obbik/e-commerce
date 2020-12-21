@@ -4,29 +4,29 @@ export default makeStyles((theme) => ({
     toolbar: theme.mixins.toolbar,
 
     content: {
-        backgroundColor:"#f3f3f3",
+        backgroundColor: "#f3f3f3",
         flexGrow: 1,
         paddingTop: theme.spacing(2)
     },
-    middleSelect:{
-        
-        justifyContent:"center",
+    middleSelect: {
+
+        justifyContent: "center",
         display: "flex",
-        align:"center",
-        marginTop:"20px",
-        marginBottom:"20px"
-        
-    },  
-    MiddleTestHeader:{
-        color:"#E3BE87",
+        align: "center",
+        marginTop: "20px",
+        marginBottom: "20px"
+
     },
-    middleText:{
-        marginLeft:"10px",
-        fontSize:"20px",
-        variant:"h1",
-        '&:hover':{
-            fontWeight:"600",
-            cursor:"pointer"
+    MiddleTestHeader: {
+        color: "#E3BE87",
+    },
+    middleText: {
+        marginLeft: "10px",
+        fontSize: "20px",
+        variant: "h1",
+        '&:hover': {
+            fontWeight: "600",
+            cursor: "pointer"
         }
     },
     root: {
@@ -34,7 +34,14 @@ export default makeStyles((theme) => ({
     },
     container: {
         width: "1200px",
-      
+
     },
-   
+    goToShop: {
+        marginTop: "2rem",
+        textDecoration: "underline",
+        cursor: "pointer"
+    }
+
+
+
 }));

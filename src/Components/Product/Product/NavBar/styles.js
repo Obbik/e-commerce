@@ -1,10 +1,10 @@
-import { makeStyles, fade } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 
 const drawerWidth = 0;
 
 export default makeStyles((theme) => ({
     appBar: {
-        backgroundColor:"#f3f3f3",
+        backgroundColor: "#f3f3f3",
         boxShadow: 'none',
         // borderBottom: '1px solid rgba(0, 0, 0, 0.12)',
         [theme.breakpoints.up('sm')]: {
@@ -28,7 +28,7 @@ export default makeStyles((theme) => ({
     // },
     grow: {
         flexGrow: 1,
-        justifyContent:"center"
+        justifyContent: "center"
     },
 
 }));

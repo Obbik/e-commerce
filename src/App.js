@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Products from './Components/Product/Products'
 import Navbar from "./Components/Product/Product/NavBar/Navbar"
 import Cart from "./Components/Product/Product/Cart/Cart"
+import Bottom from "./Components/Product/Product/Bottom/Bottom"
 import { commerce } from "./lib/commerce"
 import { Switch, BrowserRouter as Router, Route } from 'react-router-dom'
 
@@ -48,13 +49,17 @@ const App = () => {
                 <Switch>
                     <Route exact path="/">
                         <Products products={products} onAddToCard={addToCard} />
+                        <Bottom />
                     </Route>
                     <Route exact path="/cart">
                         <Cart cartItems={cart} onfetchCart={setQuantity} deleteItem={deleteItem} />
                     </Route>
+                    {/* <Route exact path="/"> */}
+
+                    {/* </Route> */}
                 </Switch>
             </div>
-        </Router>
+        </Router >
     )
 }
 
